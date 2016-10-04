@@ -10,21 +10,23 @@ import cwf.date.CwfClock;
 
 /**
  * CwfTimeUtil- contains utility methods related to time
+ *
  * @author svalapi
  *
  */
 @Component
 public class CwfTimeUtil {
-	@Autowired 
+	@Autowired
 	CwfClock cwfClock;
-	
+
 	/**
 	 * Convert Date object to Calendar
+	 *
 	 * @param date
 	 * @return
 	 */
 	public Calendar toCalendar(Date date) {
-		if(date == null) {
+		if (date == null) {
 			return null;
 		}
 		Calendar cal = cwfClock.cal();

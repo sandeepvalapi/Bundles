@@ -13,6 +13,7 @@ import cwf.date.format.DateFormatType;
 @Component
 public class CwfClockImpl implements CwfClock {
 	private static final String IST_TIMEZONE = "IST";
+
 	synchronized void init() {
 		// initTimeZone();
 		// TODO : init some time zones here
@@ -33,12 +34,12 @@ public class CwfClockImpl implements CwfClock {
 		TimeZone.setDefault(TimeZone.getTimeZone(IST_TIMEZONE));
 		return cal(TimeZone.getDefault(), Locale.getDefault());
 	}
-	
+
 	@Override
 	public Calendar cal(TimeZone timeZone, Locale locale) {
 		return Calendar.getInstance(timeZone, locale);
 	}
-	
+
 	@Override
 	public String getCurrentDateTime() {
 		SimpleDateFormat dateFormat = new SimpleDateFormat(DateFormatType.ISO_DATE_FORMAT.getByFormat());

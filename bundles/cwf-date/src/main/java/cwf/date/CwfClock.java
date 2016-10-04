@@ -7,15 +7,20 @@ import java.util.TimeZone;
 
 /**
  * CwfClock contain predefined methods related to clock
- * 
+ *
  * @author svalapi
  *
  */
 public interface CwfClock {
 	long millis();
+
 	TimeZone getTimeZone();
+
 	Calendar cal();
+
 	Calendar cal(TimeZone timeZone, Locale locale);
+
 	String getCurrentDateTime();
+
 	Date getCurrentDate();
 }

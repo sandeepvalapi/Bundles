@@ -6,10 +6,12 @@
 		<!-- Local cache mechanism is used for standalone applications -->
 		<local-cache name="menu-cache">
 			<eviction strategy="LIRS" max-entries="100" />
-			<expiration lifespan = "86400000"/>
+			<expiration lifespan="86400000" />
 		</local-cache>
-		<!-- Distributed Cache Mechanism, this is helpful when there are various clusters where -->
-		<!-- cache keys are distributed on all these nodes  -->
-		<!-- Replicated Cache mechanism is used for having all the cache details replicated on all clusters -->
+		<!-- Distributed Cache Mechanism, this is helpful when there are various 
+			clusters where -->
+		<!-- cache keys are distributed on all these nodes -->
+		<!-- Replicated Cache mechanism is used for having all the cache details 
+			replicated on all clusters -->
 	</cache-container>
 </infinispan>

@@ -7,11 +7,11 @@
  http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
  http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo-1.8.xsd">
 
-	<mvc:annotation-driven/>
-	<context:annotation-config/>
-	
+	<mvc:annotation-driven />
+	<context:annotation-config />
+
 	<!-- This below tag is used for loading properties file -->
-	<context:property-placeholder location="classpath:db.properties"/>
+	<context:property-placeholder location="classpath:db.properties" />
 
 	<!-- This below tag is used to connect MongoDB on local machine -->
 	<mongo:db-factory id="senseDbFactory"
@@ -19,12 +19,13 @@
 	<mongo:template id="senseMongoTemplate" db-factory-ref="senseDbFactory" />
 
 	<!-- This below tag is used to connect MongoDB from remote machine -->
-	<!-- <mongo:db-factory id="senseDbFactory"
-		client-uri="mongodb://admin:password@ds059115.mongolab.com:59115/cantwait-database?authMechanism=SCRAM-SHA-1" />
-	<mongo:template id="senseMongoTemplate" db-factory-ref="senseDbFactory" /> -->
-	
-	<!-- This below tag is used to connect MongoDB values fetched from properties file -->
-	<!-- <mongo:db-factory id="senseDbFactory"
-		client-uri="mongodb://${db.username}:${db.password}@${db.host}:${db.port}/${db.name}?authMechanism=${db.authmechanism}" />
-	<mongo:template id="senseMongoTemplate" db-factory-ref="senseDbFactory" /> -->
+	<!-- <mongo:db-factory id="senseDbFactory" client-uri="mongodb://admin:password@ds059115.mongolab.com:59115/cantwait-database?authMechanism=SCRAM-SHA-1" 
+		/> <mongo:template id="senseMongoTemplate" db-factory-ref="senseDbFactory" 
+		/> -->
+
+	<!-- This below tag is used to connect MongoDB values fetched from properties 
+		file -->
+	<!-- <mongo:db-factory id="senseDbFactory" client-uri="mongodb://${db.username}:${db.password}@${db.host}:${db.port}/${db.name}?authMechanism=${db.authmechanism}" 
+		/> <mongo:template id="senseMongoTemplate" db-factory-ref="senseDbFactory" 
+		/> -->
 </beans>
