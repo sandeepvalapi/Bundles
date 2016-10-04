@@ -4,11 +4,12 @@
 
 	<groupId>cwf</groupId>
 	<artifactId>cwf-bundles</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${parent.version}</version>
 	<packaging>pom</packaging>
 
 	<name>CWF Bundles</name>
 	<properties>
+		<jdk.version>1.8</jdk.version>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,6 +17,7 @@
 		<spring.version>4.2.1.RELEASE</spring.version>
 		<spring.data.mongodb>1.8.2.RELEASE</spring.data.mongodb>
 		<mongo.driver>3.2.1</mongo.driver>
+		<parent.version>0.0.1-SNAPSHOT</parent.version>
 	</properties>
 
 	<distributionManagement>
@@ -116,9 +118,9 @@
 		<module>cwf-helper</module>
 		<module>cwf-dbhelper</module>
 		<module>cwf-sms</module>
+		<module>cwf-utils</module>
 		<module>cwf-notification</module>
 		<module>cwf-adapters</module>
-		<module>cwf-utils</module>
 	</modules>
 
 	<profiles>
@@ -153,9 +155,7 @@
 		</profile>
 		<profile>
 			<id>sonar</id>
-			<!-- <activation>
-				<activeByDefault>true</activeByDefault>
-			</activation> -->
+			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
 			<properties>
 				<sonar.jdbc.url>
 					${sonar.jdbc.url}
