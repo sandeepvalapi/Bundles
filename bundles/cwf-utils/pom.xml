@@ -6,6 +6,6 @@
 		<artifactId>cwf-bundles</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>cwf-connectivity</artifactId>
-	<name>CWF Connectivity</name>
+	<artifactId>cwf-utils</artifactId>
+	<name>CWF Utils</name>
 </project>

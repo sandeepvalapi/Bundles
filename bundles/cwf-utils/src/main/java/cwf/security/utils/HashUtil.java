@@ -1,4 +1,4 @@
-package cwf.helper.hash;
+package cwf.security.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -112,13 +112,13 @@
 	</dependencies>
 
 	<modules>
-		<module>cwfdate</module>
-		<module>cwfhelper</module>
+		<module>cwf-date</module>
+		<module>cwf-helper</module>
 		<module>cwf-dbhelper</module>
-		<module>cwfconnectivity</module>
 		<module>cwf-sms</module>
-		<module>cwfnotification</module>
+		<module>cwf-notification</module>
 		<module>cwf-adapters</module>
+		<module>cwf-utils</module>
 	</modules>
 
 	<profiles>

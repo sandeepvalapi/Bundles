@@ -6,7 +6,7 @@
 		<artifactId>cwf-bundles</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>cwfnotification</artifactId>
+	<artifactId>cwf-notification</artifactId>
 	<name>CWF Notification Channel</name>
 	<!-- TODO: Need to be changed. Move all versions to parent project and create 
 		a dependency management -->
