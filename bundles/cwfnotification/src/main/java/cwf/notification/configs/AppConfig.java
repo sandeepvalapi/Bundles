@@ -14,7 +14,7 @@ import org.springframework.jms.listener.DefaultMessageListenerContainer;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
-import cwf.helper.PortCheck;
+import cwf.network.utils.PortCheck;
 import cwf.notification.channel.MailHandlerImpl;
 import cwf.notification.channel.SmsHandlerImpl;
 import cwf.notification.queue.QueueSystemService;

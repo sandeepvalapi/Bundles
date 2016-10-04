@@ -1,4 +1,4 @@
-package cwf.helper;
+package cwf.network.utils;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

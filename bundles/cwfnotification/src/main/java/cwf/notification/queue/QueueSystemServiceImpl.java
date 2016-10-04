@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-import cwf.helper.PortCheck;
+import cwf.network.utils.PortCheck;
 import cwf.notification.dto.EmailMessage;
 import cwf.notification.dto.SmsMessage;
 import cwf.notification.sender.MessageSenderImpl;
