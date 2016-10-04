@@ -28,6 +28,8 @@ public class Email {
 	 *
 	 * @param email
 	 * @return
+	 *
+	 * 		TODO : Remove
 	 */
 	public boolean send(EmailMessage email) {
 		try {
