@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-import cwf.network.PortCheck;
+import cwf.network.Port;
 import cwf.notification.dto.EmailMessage;
 import cwf.notification.dto.SmsMessage;
 import cwf.notification.sender.MessageSenderImpl;
@@ -21,7 +21,7 @@ import cwf.notification.sender.MessageSenderImpl;
 public class QueueSystemServiceImpl implements QueueSystemService, InitializingBean {
 	private static final Logger LOGGER = Logger.getLogger(QueueSystemServiceImpl.class);
 	@Autowired
-	private PortCheck portCheck;
+	private Port port;
 
 	/*
 	 * // TODO convert to XML final String[] AMQLocation = { "cmd.exe", "/C",
@@ -29,8 +29,8 @@ public class QueueSystemServiceImpl implements QueueSystemService, InitializingB
 	 * final String HOST_NAME = "localhost"; final int PORT_NUMBER = 8161;
 	 */
 
-	public void setPortCheck(PortCheck portCheck) {
-		this.portCheck = portCheck;
+	public void setPortCheck(Port port) {
+		this.port = port;
 	}
 
 	@Value("${AMQLocation}")
@@ -94,7 +94,7 @@ public class QueueSystemServiceImpl implements QueueSystemService, InitializingB
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println(AMQLocation);
-		// if (portCheck.isPortAvailable(HOST_NAME, 8161)) {
+		// if (port.isPortAvailable(HOST_NAME, 8161)) {
 		// LOGGER.info("AMQ is Activate");
 		// } else {
 		// LOGGER.info("Starting AMQ Server");

@@ -14,7 +14,7 @@ import org.springframework.jms.listener.DefaultMessageListenerContainer;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
-import cwf.network.PortCheck;
+import cwf.network.Port;
 import cwf.notification.channel.MailHandlerImpl;
 import cwf.notification.channel.SmsHandlerImpl;
 import cwf.notification.queue.QueueSystemService;
@@ -214,16 +214,16 @@ public class AppConfig {
 	}
 
 	@Bean
-	public PortCheck portCheck() {
-		PortCheck portCheck = new PortCheck();
-		return portCheck;
+	public Port port() {
+		Port port = new Port();
+		return port;
 	}
 
 	@Bean
 	public QueueSystemService queueSystemService() {
 		QueueSystemServiceImpl queueSystemService = new QueueSystemServiceImpl();
 		propertyConfigIn();
-		queueSystemService.setPortCheck(portCheck());
+		queueSystemService.setPortCheck(port());
 		queueSystemService.setMessageSender(messageSender());
 		return queueSystemService;
 
