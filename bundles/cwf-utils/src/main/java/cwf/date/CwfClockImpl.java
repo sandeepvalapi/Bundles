@@ -8,11 +8,9 @@ import java.util.TimeZone;
 
 import org.springframework.stereotype.Component;
 
-import cwf.date.format.DateFormatType;
-
 @Component
 public class CwfClockImpl implements CwfClock {
-	private static final String IST_TIMEZONE = "IST";
+	private static final String TZ_IST = "IST";
 
 	synchronized void init() {
 		// initTimeZone();
@@ -31,7 +29,7 @@ public class CwfClockImpl implements CwfClock {
 
 	@Override
 	public Calendar cal() {
-		TimeZone.setDefault(TimeZone.getTimeZone(IST_TIMEZONE));
+		TimeZone.setDefault(TimeZone.getTimeZone(TZ_IST));
 		return cal(TimeZone.getDefault(), Locale.getDefault());
 	}
 

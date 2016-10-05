@@ -1,4 +1,4 @@
-package cwf.util;
+package cwf.date;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -6,8 +6,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import cwf.date.CwfClock;
 
 /**
  * CwfDayUtil - contains day time related methods

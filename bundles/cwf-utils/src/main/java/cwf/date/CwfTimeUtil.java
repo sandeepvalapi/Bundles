@@ -1,12 +1,10 @@
-package cwf.util;
+package cwf.date;
 
 import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import cwf.date.CwfClock;
 
 /**
  * CwfTimeUtil- contains utility methods related to time

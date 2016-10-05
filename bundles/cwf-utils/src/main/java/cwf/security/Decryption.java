@@ -1,4 +1,4 @@
-package cwf.security.utils;
+package cwf.security;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package cwf.security.utils;
+package cwf.security;
 
 import java.io.File;
 import java.io.FileNotFoundException;

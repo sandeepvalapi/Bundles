@@ -114,7 +114,7 @@
 	</dependencies>
 
 	<modules>
-		<module>cwf-date</module>
+		
 		<module>cwf-helper</module>
 		<module>cwf-dbhelper</module>
 		<module>cwf-sms</module>

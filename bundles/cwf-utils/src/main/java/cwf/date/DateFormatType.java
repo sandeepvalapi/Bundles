@@ -1,4 +1,4 @@
-package cwf.date.format;
+package cwf.date;
 
 public enum DateFormatType
 {
