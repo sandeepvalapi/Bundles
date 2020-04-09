@@ -114,7 +114,6 @@
     </dependencies>
 
     <modules>
-
         <module>cwf-helper</module>
         <module>cwf-dbhelper</module>
         <module>cwf-sms</module>
@@ -190,14 +189,9 @@
                 <!-- <sonar.host.url>http://ec2-52-25-231-175.us-west-2.compute.amazonaws.com:9000/sonar</sonar.host.url> -->
             </properties>
         </profile>
+
     </profiles>
 
-    <servers>
-        <server>
-            <id>github</id>
-            <username>USERNAME</username>
-            <password>TOKEN</password>
-        </server>
-    </servers>
+
 
 </project>
