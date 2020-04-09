@@ -4,7 +4,7 @@
 
     <groupId>cwf</groupId>
     <artifactId>cwf-bundles</artifactId>
-    <version>${parent.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>CWF Bundles</name>
@@ -20,18 +20,18 @@
         <parent.version>0.0.1-SNAPSHOT</parent.version>
     </properties>
 
-    <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <name>Releases</name>
-            <url>${releaseurl}</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Snapshots</name>
-            <url>${snapshoturl}</url>
-        </snapshotRepository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>releases</id>-->
+<!--            <name>Releases</name>-->
+<!--            <url>${releaseurl}</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>snapshots</id>-->
+<!--            <name>Snapshots</name>-->
+<!--            <url>${snapshoturl}</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
 
     <dependencyManagement>
         <dependencies>

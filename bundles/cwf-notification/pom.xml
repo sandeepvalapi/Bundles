@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>cwf</groupId>
 		<artifactId>cwf-bundles</artifactId>
-		<version>${parent.version}</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>cwf-notification</artifactId>
 	<name>CWF Notification Channel</name>
@@ -106,7 +106,7 @@
 		<dependency>
 			<groupId>cwf</groupId>
 			<artifactId>cwf-utils</artifactId>
-			<version>${parent.version}</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>
