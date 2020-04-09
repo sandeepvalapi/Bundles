@@ -4,7 +4,7 @@
 
     <groupId>cwf</groupId>
     <artifactId>cwf-bundles</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${parent.version}</version>
     <packaging>pom</packaging>
 
     <name>CWF Bundles</name>
