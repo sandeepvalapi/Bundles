@@ -23,7 +23,7 @@
 	<distributionManagement>
 		<repository>
 			<id>github</id>
-			<name>GitHub OWNER Apache Maven Packages</name>
+			<name>GitHub sandeepvalapi Apache Maven Packages</name>
 			<url>https://maven.pkg.github.com/sandeepvalapi/Bundles</url>
 		</repository>
 	</distributionManagement>
@@ -119,36 +119,6 @@
     </modules>
 
     <profiles>
-
-        <profile>
-            <id>artifacts</id>
-            <!--Enable snapshots for the built in central repo to direct -->
-            <!--all requests to nexus via the configured mirror -->
-            <repositories>
-                <repository>
-                    <id>central</id>
-                    <url>http://central</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>central</id>
-                    <url>http://central</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
         <profile>
             <id>github</id>
 			<activation>
@@ -172,22 +142,5 @@
                 </repository>
             </repositories>
         </profile>
-        <profile>
-            <id>sonar</id>
-            <!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
-            <properties>
-                <sonar.jdbc.url>
-                    ${sonar.jdbc.url}
-                </sonar.jdbc.url>
-                <sonar.jdbc.driverClassName>com.mysql.jdbc.Driver</sonar.jdbc.driverClassName>
-                <sonar.jdbc.username>${sonar.jdbc.username}</sonar.jdbc.username>
-                <sonar.jdbc.password>${sonar.jdbc.password}</sonar.jdbc.password>
-                <!-- <sonar.host.url>http://ec2-52-25-231-175.us-west-2.compute.amazonaws.com:9000/sonar</sonar.host.url> -->
-            </properties>
-        </profile>
-
     </profiles>
-
-
-
 </project>
