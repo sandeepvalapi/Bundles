@@ -18,5 +18,4 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -e -X clean install -U -B package --file bundles/pom.xml deploy -Dregistry=https://maven.pkg.github
-      .com/sandeepvalapi -Dtoken=8a0796d395789c38cb9b24cb27ec969f108c0207
+      run: mvn -e -X clean install -U -B package --file bundles/pom.xml deploy -Dregistry=https://maven.pkg.github.com/sandeepvalapi -Dtoken=8a0796d395789c38cb9b24cb27ec969f108c0207
