@@ -24,7 +24,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub sandeepvalapi Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/sandeepvalapi</url>
+			<url>https://maven.pkg.github.com/sandeepvalapi/Bundles</url>
 		</repository>
 	</distributionManagement>
 
