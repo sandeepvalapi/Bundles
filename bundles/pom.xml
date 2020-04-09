@@ -24,7 +24,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub sandeepvalapi Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/sandeepvalapi/Bundles/bundles</url>
+			<url>https://maven.pkg.github.com/sandeepvalapi/cwf</url>
 		</repository>
 	</distributionManagement>
 
@@ -138,7 +138,7 @@
                 <repository>
                     <id>sandeepvalapi</id>
                     <name>GitHub Sandeep Valapi Apache Maven Packages</name>
-                    <url>https://maven.pkg.github.com/sandeepvalapi/Bundles/bundles</url>
+                    <url>https://maven.pkg.github.com/sandeepvalapi/cwf</url>
                 </repository>
             </repositories>
         </profile>
