@@ -116,6 +116,7 @@
         <module>cwf-utils</module>
         <module>cwf-notification</module>
         <module>cwf-adapters</module>
+        <module>cwf-date</module>
     </modules>
 
     <profiles>
