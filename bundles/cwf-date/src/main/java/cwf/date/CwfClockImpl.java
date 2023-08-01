@@ -14,7 +14,7 @@ public class CwfClockImpl implements CwfClock {
 
 	synchronized void init() {
 		// initTimeZone();
-		// TODO : init some time zones here
+		// TODO : init some time zones here - new
 	}
 
 	@Override
